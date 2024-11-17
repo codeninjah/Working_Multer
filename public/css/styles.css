@@ -1,0 +1,53 @@
+body {
+    font-family: Arial;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+/* This class is used in the gallery.ejs file */
+.main-container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/*
+.file-container {
+    width: 100%;
+    height: auto;
+}
+*/
+
+.file-container video {
+    width: 100%;
+    height: auto;
+}
+
+/* overlay styles */
+  
+.file-container {
+    position: relative;
+    cursor: pointer;
+  }
+  
+  /* Following is for the mouse over effect */
+  .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(57, 57, 57, 0.502);
+    top: 0;
+    left: 0;
+    transform: scale(0);
+    transition: all 0.2s 0.1s ease-in-out;
+    color: #fff;
+    /* center overlay content */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  /* hover */
+  .file-container:hover .overlay {
+    transform: scale(1);
+  }
+  

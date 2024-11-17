@@ -1,0 +1,25 @@
+<!DOCTYPE html> 
+<html> 
+ 
+<head> 
+    <title>FILE UPLOAD DEMO</title> 
+    <link rel="stylesheet" href="/css/styles.css">
+</head> 
+ 
+<body> 
+    <h1>Welcome to the upload files view</h1> 
+    <p>This page is for uploading pictures and mp4 video files up to 250MB large</p>
+    
+    <div class="main-container">
+        <form action="/uploaded"
+        enctype="multipart/form-data" method="POST"> 
+            <span>Upload File:</span> 
+            <input type="file" name="mypic" required/>
+            <p> 
+                <input type="submit" value="Upload"> 
+            </p>
+        </form> 
+    </div>
+</body> 
+ 
+</html>
